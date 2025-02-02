@@ -1,0 +1,1048 @@
+<html><head><base href=".">
+    <meta charset="UTF-8">
+    <title>Poemas para my girl @G ♥</title>
+    <style>
+    body {
+        background-color: #fff0f5;
+        font-family: 'Comic Sans MS', cursive;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(45deg, #fff0f5 25%, #ffe4e1 25%, #ffe4e1 50%, #fff0f5 50%, #fff0f5 75%, #ffe4e1 75%, #ffe4e1 100%);
+        background-size: 40px 40px;
+        overflow-x: hidden;
+    }
+    
+    .title {
+        color: #ff69b4;
+        text-shadow: 
+            0 0 10px #ff69b4,
+            0 0 20px #ff69b4,
+            0 0 30px #ff69b4;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+        from {
+            text-shadow: 
+                0 0 10px #ff69b4,
+                0 0 20px #ff69b4,
+                0 0 30px #ff69b4;
+        }
+        to {
+            text-shadow: 
+                0 0 20px #ff69b4,
+                0 0 30px #ff69b4,
+                0 0 40px #ff69b4;
+        }
+    }
+    
+    .kitty-logo {
+        width: 150px;
+        margin: 20px;
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .floating-hearts {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+    
+    .heart {
+        position: absolute;
+        color: #ff69b4;
+        opacity: 0.3;
+        transform-style: preserve-3d;
+        animation: float-3d 6s linear infinite;
+    }
+    
+    @keyframes float-3d {
+        0% {
+            transform: translateY(100vh) translateZ(0) rotateX(0deg) rotateY(0deg);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translateY(-100px) translateZ(100px) rotateX(360deg) rotateY(360deg);
+            opacity: 0;
+        }
+    }
+    
+    .poems-circle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+    }
+    
+    .poem-card {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        animation: float-card 3s ease-in-out infinite;
+    }
+    
+    @keyframes float-card {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(2deg); }
+    }
+    
+    .poem-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .poem-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+    
+    .poem-card:hover .poem-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .poem-front, .poem-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    .poem-front {
+        background: linear-gradient(45deg, #fff0f5, #ffe4e1);
+        border: 3px solid #ff69b4;
+    }
+    
+    .poem-back {
+        background: linear-gradient(45deg, #ff69b4, #ff1493);
+        color: white;
+        transform: rotateY(180deg);
+        font-size: 0.9em;
+        text-align: center;
+        overflow-y: auto;
+        border: 3px solid #fff;
+    }
+    
+    .day-number {
+        font-size: 3em;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        animation: pulse-number 2s infinite;
+    }
+    
+    @keyframes pulse-number {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .love-message {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 30px;
+        background-color: #ff69b4;
+        color: white;
+        border-radius: 25px;
+        font-size: 1.2em;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% { transform: translateX(-50%) scale(1); }
+        50% { transform: translateX(-50%) scale(1.05); }
+        100% { transform: translateX(-50%) scale(1); }
+    }
+    
+    .sparkle {
+        position: absolute;
+        pointer-events: none;
+        background: radial-gradient(circle, #fff, transparent);
+        filter: drop-shadow(0 0 10px #ff69b4);
+        animation: sparkle 1.5s linear infinite;
+    }
+    
+    @keyframes sparkle {
+        0% { transform: scale(0) rotate(0deg); opacity: 0; }
+        50% { transform: scale(1) rotate(180deg); opacity: 0.8; }
+        100% { transform: scale(0) rotate(360deg); opacity: 0; }
+    }
+    </style>
+    </head>
+    <body>
+    <h1 class="title">HELLO MINHA GAROTA ♥</h1>
+    <h2 class="title">LEIA QUADRADINHO POR QUADRADINHO ♥</h2>
+    <h3 class="title">Feito by Pedro Gama</h3>
+    <img src="https://i.ibb.co/5BhVFGy/IMG-3166.png" alt="Hello Kitty" class="kitty-logo">
+    
+    <div class="floating-hearts"></div>
+    <div class="love-message">Eu te amo mais que tudo neste mundo ♥</div>
+    
+    <div class="poems-circle">
+        <!-- Día 1 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">1</span>
+                </div>
+                <div class="poem-back">
+                    Cada amanhecer pensa em ti,<br>
+                    No seu sorriso que ilumina minha existência,<br>
+                    Você é o amor que sempre sonhei,<br>
+                    A razão pela qual aprendi a viver.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 2 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">2</span>
+                </div>
+                <div class="poem-back">
+                    Como uma estrela no meu céu brilhas,<br>
+                    Iluminando minhas noites com seu amor,<br>
+                    Em cada batida do meu coração você está,<br>
+                    Sendo minha mais doce bênção.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 3 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">3</span>
+                </div>
+                <div class="poem-back">
+                    Seus olhos são meu guia no escuro,<br>
+                    Sua voz é a melodia da minha música,<br>
+                    Com você eu encontrei a felicidade,<br>
+                    E o verdadeiro significado do amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 4 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">4</span>
+                </div>
+                <div class="poem-back">
+                    Em cada respiração do meu ser,<br>
+                    Seu nome está desenhado no ar,<br>
+                    Você é minha razão para acreditar,<br>
+                    Neste amor que ninguém conhece.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 5 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">5</span>
+                </div>
+                <div class="poem-back">
+                    Como pétalas de rosa ao vento,<br>
+                    Minhas palavras voam para você,<br>
+                    Carregando todo o sentimento,<br>
+                    Do amor que vive em mim.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 6 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">6</span>
+                </div>
+                <div class="poem-back">
+                    Você é a luz da minha manhã,<br>
+                    O sonho da minha noite serena,<br>
+                    O sorriso que me cura,<br>
+                    E o amor que vale a pena.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 7 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">7</span>
+                </div>
+                <div class="poem-back">
+                    Cada dia com você é um presente,<br>
+                    Um tesouro que guardo em meu coração,<br>
+                    Em seus braços encontro minha proteção,<br>
+                    E no seu amor, minha melhor música.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 8 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">8</span>
+                </div>
+                <div class="poem-back">
+                    Seu amor é meu doce remédio,<br>
+                    O bálsamo que cura meu ser,<br>
+                    Você é a estrela que ilumina,<br>
+                    Todo o meu mundo ao amanhecer.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 9 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">9</span>
+                </div>
+                <div class="poem-back">
+                    No jardim do meu coração,<br>
+                    Você floresce como a flor mais linda,<br>
+                    Preenchendo minha ilusão com cor,<br>
+                    Com o perfume do nosso amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 10 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">10</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu sonho tornado realidade,<br>
+                    Minha felicidade em forma de amor,<br>
+                    Com você eu encontrei a verdade,<br>
+                    O que o amor significa.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 11 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">11</span>
+                </div>
+                <div class="poem-back">
+                    Como a lua que brilha à noite,<br>
+                    Você ilumina meu caminho enquanto eu ando,<br>
+                    Você é o desperdício mais precioso,<br>
+                    Que amor eu poderia encontrar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 12 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">12</span>
+                </div>
+                <div class="poem-back">
+                    Em cada batida do coração eu sinto você,<br>
+                    Em cada respiração eu vivo você,<br>
+                    Você é meu momento mais doce,<br>
+                    E o amor pelo qual suspiro.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 13 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">13</span>
+                </div>
+                <div class="poem-back">
+                    Como brisa em primavera.,<br>
+                    Refrescas meu coração,<br>
+                    Você é minha doce quimera,<br>
+                    Minha mais bela ilusão.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 14 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">14</span>
+                </div>
+                <div class="poem-back">
+                    No livro da minha vida,<br>
+                    Você é o capítulo mais lindo,<br>
+                    A história mais querida,<br>
+                    amor sem título.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 15 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">15</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu presente e futuro,<br>
+                    Minha realidade mais linda,<br>
+                    O amor mais puro e seguro,<br>
+                    minha felicidade eterna.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 16 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">16</span>
+                </div>
+                <div class="poem-back">
+                    Cada segundo que pasa,<br>
+                    Meu amor por você cresce mais,<br>
+                    Você é a luz da minha casa,<br>
+                    E eu nunca vou te deixar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 17 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">17</span>
+                </div>
+                <div class="poem-back">
+                    Entre milhões de estrelas,<br>
+                    Você é quem mais brilha,<br>
+                    De todas as coisas bonitas,<br>
+                    você é minha maravilha.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 18 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">18</span>
+                </div>
+                <div class="poem-back">
+                    Você é a razão dos meus dias,<br>
+                    A musa dos meus poemas,<br>
+                    Cada batida me envolve em melodias,<br>
+                    E em seus braços encontro meus temas.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 19 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">19</span>
+                </div>
+                <div class="poem-back">
+                    Você é a flor que floresce no meu peito,<br>
+                    O abrigo que balança minha alma,<br>
+                    Você é um sonho que nunca desaparece,<br>
+                    Meu amor por você cresce e cresce.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 20 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">20</span>
+                </div>
+                <div class="poem-back">
+                    Como o mar abraça a costa,<br>
+                    É assim que eu abraço seu amor sincero,<br>
+                    Você é a estrela que brilha,<br>
+                    No meu céu, minha doce saudade.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 21 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">21</span>
+                </div>
+                <div class="poem-back">
+                    Você é a música que nunca acaba,<br>
+                    A melodia que ilumina minha caminhada,<br>
+                    Cada nota no meu peito adivinha,<br>
+                    Que ao seu lado eu quero sonhar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 22 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">22</span>
+                </div>
+                <div class="poem-back">
+                    Como um rio que flui sem parar,<br>
+                    Este é o meu amor por você,<br>
+                    Você é o sol que ilumina meu jardim,<br>
+                    E você sempre estará aqui.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 23 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">23</span>
+                </div>
+                <div class="poem-back">
+                    Você é o vento que acaricia minha pele,<br>
+                    A brisa suave que me faz sentir,<br>
+                    Em cada sussurro, em cada saudade,<br>
+                    Juntos sempre, é assim que quero viver.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 24 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">24</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu refúgio na tempestade,<br>
+                    A calma que preenche meu ser,<br>
+                    Desde que você chegou, minha vida está lenta,<br>
+                    Você é o sol que nasce de novo.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 25 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">25</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu sonho em cada despertar,<br>
+                    A razão do meu riso e do meu choro,<br>
+                    Eu sempre quero estar no seu amor,<br>
+                    Juntos, amor, nunca em uma música.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 26 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">26</span>
+                </div>
+                <div class="poem-back">
+                    Você é a luz que ilumina minha vida,<br>
+                    A razão dos meus melhores momentos,<br>
+                    Você é meu amor, minha doce saída,<br>
+                    Em você eu encontro meus sentimentos.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 27 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">27</span>
+                </div>
+                <div class="poem-back">
+                    Como um farol no escuro,<br>
+                    É assim que você guia minha caminhada,<br>
+                    Você é meu amor, minha felicidade,<br>
+                    Juntos sempre, quero sonhar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 28 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">28</span>
+                </div>
+                <div class="poem-back">
+                    Você é o abraço que cura minha ferida,<br>
+                    A cura para minha solidão,<br>
+                    Você é meu amor, minha vida,<br>
+                    Sempre juntos, na verdade.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 29 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">29</span>
+                </div>
+                <div class="poem-back">
+                    Cada batida do meu coração,<br>
+                    É um sussurro de amor sincero,<br>
+                    Você é minha razão, minha grande paixão,<br>
+                    Sempre juntos, todo meu amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 30 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">30</span>
+                </div>
+                <div class="poem-back">
+                    Você é o sonho que nunca se apaga,<br>
+                    A luz que eu sempre quero ver,<br>
+                    Em seus braços meu amor se desenrola,<br>
+                    E eu nunca vou deixar de te amar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 31 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">31</span>
+                </div>
+                <div class="poem-back">
+                    Você é a flor que eu quero cuidar,<br>
+                    A chuva que acalma meu ser,<br>
+                    Em cada beijo eu quero sonhar,<br>
+                    Com você sempre, meu amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 32 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">32</span>
+                </div>
+                <div class="poem-back">
+                    Você é o sol que nasce na minha vida,<br>
+                    A razão por trás do meu sorriso,<br>
+                    Cada momento ao seu lado é um jogo,<br>
+                    E eu sempre quero que você seja minha pressa.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 33 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">33</span>
+                </div>
+                <div class="poem-back">
+                    No silêncio da noite estrelada,<br>
+                    Eu encontro você em cada sussurro,<br>
+                    Você é meu amor, minha alma encantada,<br>
+                    Sempre contigo, meu doce murmúrio.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 34 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">34</span>
+                </div>
+                <div class="poem-back">
+                    Você é a paz que inunda meu ser,<br>
+                    A risada que enche minha casa,<br>
+                    Em cada palavra eu quero renascer,<br>
+                    E no seu amor, eu sempre quero estar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 35 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">35</span>
+                </div>
+                <div class="poem-back">
+                    Você é o sonho que nunca se apaga,<br>
+                    A luz que eu sempre quero ver,<br>
+                    Em seus braços meu amor se desenrola,<br>
+                    E eu nunca vou deixar de te amar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 36 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">36</span>
+                </div>
+                <div class="poem-back">
+                    Você é a flor que eu quero cuidar,<br>
+                    A chuva que acalma meu ser,<br>
+                    Em cada beijo eu quero sonhar,<br>
+                    Com você sempre, meu amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 37 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">37</span>
+                </div>
+                <div class="poem-back">
+                    Você é o sol que nasce na minha vida,<br>
+                    A razão por trás do meu sorriso,<br>
+                    Cada momento ao seu lado é um jogo,<br>
+                    E eu sempre quero que você seja minha pressa.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 38 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">38</span>
+                </div>
+                <div class="poem-back">
+                    No silêncio da noite estrelada,<br>
+                    Eu encontro você em cada sussurro,<br>
+                    Você é meu amor, minha alma encantada,<br>
+                    Sempre contigo, meu doce murmúrio.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 39 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">39</span>
+                </div>
+                <div class="poem-back">
+                    Você é a paz que inunda meu ser,<br>
+                    A risada que enche minha casa,<br>
+                    Em cada palavra eu quero renascer,<br>
+                    E no seu amor, eu sempre quero estar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 40 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">40</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu céu em um dia nublado,<br>
+                    A luz que brilha na escuridão,<br>
+                    Sempre ao seu lado, nunca longe,<br>
+                    Você é meu amor, minha felicidade.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 41 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">41</span>
+                </div>
+                <div class="poem-back">
+                    Você é a melodia que me rodeia,<br>
+                    A música que eu quero cantar,<br>
+                    Em cada verso meu amor se resolve,<br>
+                    Sempre com você, eu quero estar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 42 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">42</span>
+                </div>
+                <div class="poem-back">
+                    Como um rio que flui sem parar,<br>
+                    Este é o meu amor por você,<br>
+                    Você é o sol que ilumina meu jardim,<br>
+                    E você sempre estará aqui.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 43 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">43</span>
+                </div>
+                <div class="poem-back">
+                    Você é o vento que acaricia minha pele,<br>
+                    A brisa suave que me faz sentir,<br>
+                    Em cada sussurro, em cada saudade,<br>
+                    Juntos sempre, é assim que quero viver.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 44 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">44</span>
+                </div>
+                <div class="poem-back">
+                    ocê é meu refúgio na tempestade,<br>
+                    A calma que preenche meu ser,<br>
+                    Desde que você chegou, minha vida está lenta,<br>
+                    Você é o sol que nasce de novo.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 45 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">45</span>
+                </div>
+                <div class="poem-back">
+                    Você é meu sonho em cada despertar,<br>
+                    A razão do meu riso e do meu choro,<br>
+                    Eu sempre quero estar no seu amor,<br>
+                    Juntos, amor, nunca em uma música.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 46 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">46</span>
+                </div>
+                <div class="poem-back">
+                    Você é a luz que ilumina minha vida,<br>
+                    A razão dos meus melhores momentos,<br>
+                    Você é meu amor, minha doce partida,<br>
+                    Em você encontro meus sentimentos.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 47 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">47</span>
+                </div>
+                <div class="poem-back">
+                    Como um farol no escuro,<br>
+                    É assim que você guia minha caminhada,<br>
+                    Você é meu amor, minha felicidade,<br>
+                    Juntos sempre, quero sonhar.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 48 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">48</span>
+                </div>
+                <div class="poem-back">
+                    Você é o abraço que cura minha ferida,<br>
+                    A cura para minha solidão,<br>
+                    Você é meu amor, minha vida,<br>
+                    Sempre juntos, na verdade.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 49 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">49</span>
+                </div>
+                <div class="poem-back">
+                    Cada batida do meu coração,<br>
+                    É um sussurro de amor sincero,<br>
+                    Você é minha razão, minha grande paixão,<br>
+                    Sempre juntos, todo meu amor.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Día 50 -->
+        <div class="poem-card">
+            <div class="poem-inner">
+                <div class="poem-front">
+                    <span class="day-number">50</span>
+                </div>
+                <div class="poem-back">
+                    Você é o sonho que nunca se apaga,<br>
+                    A luz que eu sempre quero ver,<br>
+                    Em seus braços meu amor se desenrola,<br>
+                    E eu nunca vou deixar de te amar.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    // Floating hearts animation
+    function createEnhancedHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '♥';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        heart.style.transform = `rotateX(${Math.random() * 360}deg) rotateY(${Math.random() * 360}deg)`;
+        document.querySelector('.floating-hearts').appendChild(heart);
+        
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+    
+    setInterval(createEnhancedHeart, 300);
+    
+    // Enhanced sparkle effect
+    function createEnhancedSparkle(e) {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = e.pageX + 'px';
+        sparkle.style.top = e.pageY + 'px';
+        sparkle.style.width = Math.random() * 15 + 5 + 'px';
+        sparkle.style.height = sparkle.style.width;
+        sparkle.style.transform = `rotate(${Math.random() * 360}deg) translateZ(${Math.random() * 50}px)`;
+        document.body.appendChild(sparkle);
+        
+        setTimeout(() => sparkle.remove(), 1500);
+    }
+    
+    document.addEventListener('mousemove', (e) => {
+        if(Math.random() > 0.8) { // Only create sparkles 20% of the time
+            createEnhancedSparkle(e);
+        }
+    });
+    
+    // Card flip functionality
+    document.querySelectorAll('.poem-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const inner = card.querySelector('.poem-inner');
+            inner.style.transform = inner.style.transform === 'rotateY(180deg)' 
+                ? 'rotateY(0deg)' 
+                : 'rotateY(180deg)';
+        });
+        
+        // Add 3D tilt effect to cards
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const angleX = (y - centerY) / 30;
+            const angleY = (centerX - x) / 30;
+            
+            card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    });
+    
+    // Love message changer
+    const loveMessages = [
+        "Te amo mais que nada neste mundo ♥",
+        "Você é meu mundo ♥",
+        "Contigo até o infinito ♥",
+        "Meu coração é você ♥",
+        "Eu te amo muito minha princesa ♥",
+        "Cada dia meu amor por voce cresce ♥",
+        "Meu amor por ti é eterno ♥",
+        "Você é meu sonho de realidade ♥",
+        "Meu coracao pertence a voce ♥",
+        "Juntos para sempre ♥"
+    ];
+    
+    let currentMessageIndex = 0;
+    const loveMessageElement = document.querySelector('.love-message');
+    
+    setInterval(() => {
+        currentMessageIndex = (currentMessageIndex + 1) % loveMessages.length;
+        loveMessageElement.textContent = loveMessages[currentMessageIndex];
+    }, 3000);
+    </script>
+    </body></html>
